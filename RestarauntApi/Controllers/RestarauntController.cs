@@ -33,5 +33,10 @@ namespace RestarauntApi.Controllers
             _db.Restraunts.Add(newRestaraunt);
             _db.SaveChanges();
         }
+        [HttpGet("{restarauntID}")]
+        public ActionResult<Restaraunt> Get(int restarauntID)
+        {
+            return _db.Restraunts.FirstOrDefault(r => r.Id == restarauntID);
+        }
     }
 }
