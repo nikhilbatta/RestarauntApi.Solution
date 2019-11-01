@@ -23,9 +23,14 @@ namespace RestarauntApi.Controllers
             _db = db;
         }
         [HttpGet]
-        public ActionResult<IEnumerable<Restaraunt>> Get()
+        public ActionResult<IEnumerable<Restaraunt>> Get(string restname)
         {
-            return _db.Restraunts.ToList();
+            var query = _db.Restraunts.AsQueryable();
+            if(restname != null)
+            {
+                query = query.Where(r => r.Name == restname);
+            }
+            return query.ToList();
         }
         [HttpPost]
         public void Post([FromBody] Restaraunt newRestaraunt)
@@ -33,10 +38,25 @@ namespace RestarauntApi.Controllers
             _db.Restraunts.Add(newRestaraunt);
             _db.SaveChanges();
         }
+        // get restaraunt by specific id
         [HttpGet("{restarauntID}")]
         public ActionResult<Restaraunt> Get(int restarauntID)
         {
             return _db.Restraunts.FirstOrDefault(r => r.Id == restarauntID);
+        }
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] Restaraunt updatedRestaraunt)
+        {
+            updatedRestaraunt.Id = id;
+            _db.Entry(updatedRestaraunt).State = EntityState.Modified;
+            _db.SaveChanges();
+        }
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+            Restaraunt restarauntToDelete = _db.Restraunts.FirstOrDefault(r => r.Id == id);
+            _db.Restraunts.Remove(restarauntToDelete);
+            _db.SaveChanges();
         }
     }
 }
