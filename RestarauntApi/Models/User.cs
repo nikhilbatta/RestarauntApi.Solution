@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace RestarauntApi.Models
 {
     public class User
@@ -7,7 +9,6 @@ namespace RestarauntApi.Models
         public string LastName {get;set;}
         public string Username {get;set;}
         public string Password {get;set;}
-        public string Token {get;set;}
         public ICollection<Review> UserReviews {get;set;}
         public string Token {get;set;}
         public User()

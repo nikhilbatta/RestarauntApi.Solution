@@ -2,7 +2,7 @@ using System.IO;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace MessageBoard
+namespace RestarauntApi
 {
     public class Program
     {

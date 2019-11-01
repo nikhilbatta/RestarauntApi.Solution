@@ -1,4 +1,4 @@
-using MessageBoard.Models;
+using RestarauntApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;

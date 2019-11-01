@@ -1,6 +1,8 @@
+using System.Collections.Generic;
+
 namespace RestarauntApi.Models
 {
-    public class Restarunt
+    public class Restaraunt
     {
         public int Id {get;set;}
         public string Name {get;set;}
@@ -8,7 +10,7 @@ namespace RestarauntApi.Models
         public string HoursOfOperation {get;set;}
         public ICollection<Review> Reviews {get;set;}
         
-        public Restarunt()
+        public Restaraunt()
         {
             this.Reviews = new HashSet<Review>();
         }

@@ -1,0 +1,14 @@
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\obj\Debug\netcoreapp2.2\RestarauntApi.csprojAssemblyReference.cache
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\obj\Debug\netcoreapp2.2\RestarauntApi.csproj.CoreCompileInputs.cache
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\obj\Debug\netcoreapp2.2\RestarauntApi.RazorAssemblyInfo.cache
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\obj\Debug\netcoreapp2.2\RestarauntApi.RazorAssemblyInfo.cs
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\obj\Debug\netcoreapp2.2\RestarauntApi.AssemblyInfoInputs.cache
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\obj\Debug\netcoreapp2.2\RestarauntApi.AssemblyInfo.cs
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\bin\Debug\netcoreapp2.2\RestarauntApi.deps.json
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\bin\Debug\netcoreapp2.2\RestarauntApi.runtimeconfig.json
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\bin\Debug\netcoreapp2.2\RestarauntApi.runtimeconfig.dev.json
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\bin\Debug\netcoreapp2.2\RestarauntApi.dll
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\bin\Debug\netcoreapp2.2\RestarauntApi.pdb
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\obj\Debug\netcoreapp2.2\RestarauntApi.RazorTargetAssemblyInfo.cache
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\obj\Debug\netcoreapp2.2\RestarauntApi.dll
+C:\Users\NikhilBatta\Desktop\RestarauntApi.Solution\RestarauntApi\obj\Debug\netcoreapp2.2\RestarauntApi.pdb

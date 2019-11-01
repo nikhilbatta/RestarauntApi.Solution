@@ -10,7 +10,7 @@ using RestarauntApi.Helpers;
 using RestarauntApi.Models;
 using Microsoft.AspNetCore.Authorization;
 
-namespace MessageBoard.Services
+namespace RestarauntApi.Services
 {
     public interface IUserService
     {

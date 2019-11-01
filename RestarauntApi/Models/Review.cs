@@ -4,7 +4,7 @@ namespace RestarauntApi.Models
     {
         public int Id {get;set;}
         public int RestarauntId {get;set;}
-        public Restarunt RestaruntV {get;set;}
+        public Restaraunt RestaruntV {get;set;}
         public int UserId {get;set;}
         public User User {get;set;}
         public string Title {get;set;}
