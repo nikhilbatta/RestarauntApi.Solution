@@ -21,6 +21,14 @@ namespace MessageBoard.Controllers
             _userService = userService;
             _db = db;
         }
+        [AllowAnonymous]
+        [HttpPost("create")]
+        public IActionResult Create([FromBody]User user)
+        {
+            Console.WriteLine(user.Username);
+            _userService.Create(user);
+            return Ok(user);
+        }
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -42,5 +50,6 @@ namespace MessageBoard.Controllers
 
             return Ok(user);
         }
+
     }
 }
