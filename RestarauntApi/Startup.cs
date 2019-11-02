@@ -29,6 +29,7 @@ namespace RestarauntApi
             services.AddDbContext<RestarauntApiContext>(opt =>
                 opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddCors();
+            // adds in refrence loop handling so the same entity refrence doesnt get included when using "include".
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             // configure strongly typed settings objects
