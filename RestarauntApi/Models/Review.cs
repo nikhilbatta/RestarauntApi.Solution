@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace RestarauntApi.Models
 {
     public class Review

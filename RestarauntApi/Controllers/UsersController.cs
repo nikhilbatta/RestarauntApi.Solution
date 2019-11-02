@@ -5,6 +5,7 @@ using RestarauntApi.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace MessageBoard.Controllers
 {
@@ -21,18 +22,16 @@ namespace MessageBoard.Controllers
             _userService = userService;
             _db = db;
         }
-        [AllowAnonymous]
-        [HttpPost("create")]
-        public IActionResult Create([FromBody]User user)
-        {
-            Console.WriteLine(user.Username);
-            _userService.Create(user);
-            return Ok(user);
-        }
+        
         [HttpGet]
-        public IActionResult GetAll()
+        public ActionResult<IEnumerable<User>> GetAll()
         {
-            var users =  _userService.GetAll();
+            // foreach(Review review in _db.Users)
+            // {
+            //     Console.WriteLine(review.Body);
+            // }
+            var users = _db.Users.Include(u => u.UserReviews).AsQueryable();
+            // var users = _userService.GetAll();
             return Ok(users);
         }
 

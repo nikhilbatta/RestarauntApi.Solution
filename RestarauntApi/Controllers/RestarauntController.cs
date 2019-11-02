@@ -25,7 +25,7 @@ namespace RestarauntApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Restaraunt>> Get(string restname)
         {
-            var query = _db.Restraunts.AsQueryable();
+            var query = _db.Restraunts.Include(r => r.Reviews).AsQueryable();
             if(restname != null)
             {
                 query = query.Where(r => r.Name == restname);
