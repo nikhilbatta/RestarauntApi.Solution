@@ -32,10 +32,12 @@ namespace RestarauntApi.Controllers
             }
             return query.ToList();
         }
-        [HttpPost("{id}")]
+        [HttpPost("restaraunt/{id}")]
         public void Post(int id, [FromBody] Review newReview)
         {
-
+            newReview.RestarauntId = id;
+            _db.Reviews.Add(newReview);
+            _db.SaveChanges();
         }
     }
 }
