@@ -32,5 +32,10 @@ namespace RestarauntApi.Controllers
             }
             return query.ToList();
         }
+        [HttpPost("{id}")]
+        public void Post(int id, [FromBody] Review newReview)
+        {
+
+        }
     }
 }
