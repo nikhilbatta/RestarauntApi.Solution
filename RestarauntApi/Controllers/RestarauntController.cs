@@ -23,12 +23,16 @@ namespace RestarauntApi.Controllers
             _db = db;
         }
         [HttpGet]
-        public ActionResult<IEnumerable<Restaraunt>> Get(string restname)
+        public ActionResult<IEnumerable<Restaraunt>> Get(string restname, string location)
         {
             var query = _db.Restraunts.Include(r => r.Reviews).AsQueryable();
             if(restname != null)
             {
                 query = query.Where(r => r.Name == restname);
+            }
+            if(location != null)
+            {
+                query = query.Where(r => r.Location == location);
             }
             return query.ToList();
         }
