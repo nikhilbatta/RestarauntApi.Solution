@@ -13,6 +13,7 @@ using System;
 
 namespace RestarauntApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class RestarauntController : ControllerBase
